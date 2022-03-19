@@ -1,0 +1,50 @@
+header {
+    background-color: red;
+    height:70px;
+}
+
+.carrousel {
+    background-color: aqua;
+    height: 450px;
+}
+
+.presentation {
+    background-color: green;
+    height: 300px;
+}
+
+.about_us {
+    background-color:coral;
+    height: 300px;
+}
+
+.about_us_description {
+    background-color: blue;
+    height: 300px;
+}
+
+.photo {
+    background-color: pink;
+    height:300px;
+}
+
+
+
+.logo {
+    max-width: 100px
+}
+
+.galerie_item {
+    background-color: skyblue;
+    height:200px
+}
+footer {
+    background-color: gray;
+    height: 200px;
+}
+
+.prochains_evenements {
+    background-color: chocolate;
+    height: 300px
+}
+
