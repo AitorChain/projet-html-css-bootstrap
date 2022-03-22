@@ -2,14 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
-a, p, h1, h2, h3 {
+a, p, h1, h2, h3, h4, h5, h6 {
     font-family: Roboto;
 }
 
-.no-padding {
-    padding-left: 0px;
-    padding-right: 0px;
-}
 
 header {
     background-color: rgb(255, 255, 255);
@@ -19,35 +15,6 @@ header {
 
 .logo {
     max-width: 300px;
-}
-
-@media screen and (max-width: 960px) {
-
-    .about_us_photo {
-        display: none;
-    }
-    
-}
-
-@media screen and (max-width: 720px) {
-
-    .logo {
-        max-width: 200px;
-    }
-
-    .navbar li {
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-
-}
-
-@media screen and (max-width: 356px) {
-
-    .logo {
-        max-width: 160px;
-    }
-    
 }
 
 .navbar ul {
@@ -82,7 +49,8 @@ header {
 
 
 
-.banner-text h1 {
+.banner-text h1,
+.banner-text h2 {
     font-size: 3.5em;
     color: #fff;
     font-family: Roboto;
@@ -91,8 +59,14 @@ header {
     padding-bottom: 2em;
 }
 
-.banner-text h1 b {
+.banner-text h1 strong,
+.banner-text h2 strong {
     color: #6ed556fc;
+}
+
+.card-title > strong, 
+.card-subtitle > strong {
+    color: green;
 }
 
 .btn-rounded {
@@ -102,8 +76,8 @@ header {
   border-radius: 50%;
 }
 
-.btn-call-action {
-    margin-bottom: 50px;  
+.btn-arrow {
+  margin-bottom: 4em;  
   display: inline-block;
   font-weight: 400;
   color: #212529;
@@ -121,53 +95,69 @@ header {
   background-color: #f8f9fa;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-  
-  .btn-call-action:hover {
+
+
+  .btn-arrow:hover {
     color: #ffffff;
     background-color: #419f2bfc;
     border-color: #419f2bfc;
   }
   
-  .btn-call-action:focus, .btn-call-action.focus {
+  .btn-arrow:focus, .btn-arrow.focus {
     outline: none;
   }
   
-  .btn-call-action.disabled, .btn-call-action:disabled {
+  .btn-arrow.disabled, .btn-arrow:disabled {
     color: #212529;
     background-color: #f8f9fa;
   }
 
-.btn-call-action-green {
-  padding: 1rem 2rem;
-  margin-bottom: 50px;  
-  display: inline-block;
-  font-weight: 500;
-  color: #fff;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: transparent;
-  border: 4px solid #419f2bfc;
-  font-size: 1.4rem;
-  line-height: 1.5;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
+.btn-call-action{
+    padding: 1rem 2rem;
+    font-weight: 500;
+    border: 4px solid #419f2bfc;
+    font-size: 1.4rem;
+    background-color: transparent;
+    margin-bottom: 50px;  
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 4px solid #419f2bfc;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
   
-.btn-call-action-green:hover {
-    color: #ffffff;
+.btn-arrow-green {
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #419f2bfc;
     background-color: #419f2bfc;
 }
   
+.btn-arrow-green:hover, .btn-call-action:hover {
+    color: #ffffff;
+    background-color: #419f2bfc;
+}
 
+.btn-arrow-green:hover {
+    color: #212529;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+}
+  
 
 .about_us {
     height: auto;
     scroll-margin-top: 75px;
-    margin: 10vh 0; 
+    margin: 10vh 0 2vh 0; 
 }
 
 .about_us_title {
@@ -203,6 +193,10 @@ header {
     max-width: 100%;
 }
 
+.accordion {
+    margin-bottom: 3vh;
+}
+
 
 .evenements-banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.822)), url(media/Greenspace_madrid.jpg);
@@ -210,7 +204,7 @@ header {
     background-position-y: center;
 }
 
-.evenements-banner .banner-text h1 {
+.evenements-banner .banner-text h2 {
     font-size: 3.5em;
     color: #fff;
     font-family: Roboto;
@@ -232,4 +226,69 @@ footer .copyright {
 footer .copyright p {
     font-size: 1.2em;
     font-weight: 500;
+}
+
+.evenements-page-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.822)), url(media/Greenpeace_nuclear.jpg);
+    background-position: top center;
+    background-position-y: center;
+}
+
+.prochains-evenements {
+    padding: 5vh 0vh;
+}
+
+.prochains_evenements_container {
+    scroll-margin-top: 75px;
+}
+
+.card-text {
+    text-align: justify;
+    padding-top: 1em;
+}
+
+.card-container {
+    margin-bottom: 2em;
+}
+
+
+@media screen and (max-width: 960px) {
+
+    .about_us_photo {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 720px) {
+
+    .banner-text h1,
+    .banner-text h2,
+    .evenements-banner .banner-text h2,
+    .about_us_title {
+        font-size: 2em;
+    }
+
+    .logo {
+        max-width: 200px;
+    }
+
+    .navbar li {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 356px) {
+
+    .banner-text h1,
+    .banner-text h2 {
+        font-size: 2em;
+    }
+
+    .logo {
+        max-width: 160px;
+    }
+    
 }

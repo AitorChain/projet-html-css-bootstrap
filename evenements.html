@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Participe dans la lutte contre le changement climatique avec Greenpeace."/>
+
+        
+        <title>Greenpeace - Prochains evenements</title>
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="css/styles.css" >
+        <!--CSS-->
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.css" >
+        <!--JQuery-->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <!--Boostrap JS-->
+        <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        </style>
+    </head>
+
+    <body>
+        <header class="container-fluid fixed-top">
+
+            <nav class="navbar container-xl navbar-expand-md ">
+                <a href="index.html" class="navbar-brand nav-link">
+                    <img src="css/media/logo.png" class="logo">
+                </a>
+
+                <button
+                type="button"
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                arie-expanded="false"
+                aria-label="Toggle activation"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+            
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li onclick="location.href='evenements.html';" class="nav-item top-nav">
+                            <a href="evenements.html">Prochains evenements</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container-fluid banner evenements-page-banner">
+            
+            <section class="container banner-text">
+                <h1>Viens participer dans la lutte contre la <strong>changement climatique</strong> avec nous</h1>
+            </section>
+
+            <button
+            type="button"
+            class="btn-rounded btn-arrow"
+            onclick="window.location.href='#prochains_evenements_container'" 
+            ><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+              </svg></button>
+
+        </div>
+
+        <main class="container-xl">
+
+            <article class="row">
+                <nav class="col-12" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Page d'accueil</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Prochains evenements</li>
+                    </ol>
+                </nav>
+            </article>
+            <article id="prochains_evenements_container" class="prochains_evenements_container">
+                <h2 class="about_us_title">Où serons nous?</h2>
+                <section class="row row-cols-xl-3 prochains-evenements">    
+                    <div class="cols-xl-4 card-container">
+                        <div class="card">
+                            <img class="card-img-top" src="css/media/Greenpeace_gmo.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title"><strong>Toulouse</strong> - 24/06/2022 </h4>
+                                <h6 class="card-subtitle">18h30 - <strong>Place Saint-Pierre</strong></h6>
+                                <p class="card-text">Les semenciers et les industriels de l'agro-chimie font pression afin de différencier les organismes génétiques produits par de nouvelles techniques de modification génétique (les NBT, pour "new breeding techniques" en anglais) des autres OGM. Ainsi, ils espèrent que les OGM produits grâce aux NBT échapperont à la réglementation en vigueur, les soustrayant donc aux obligations de contrôles et d'étiquetage.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cols-xl-4 card-container">
+                        <div class="card">
+                            <img class="card-img-top" src="css/media/Greenpeace_nuclear.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title"><strong>Rouen</strong> - 21/05/2022</h4>
+                                <h6 class="card-subtitle">10h00 - <strong>Place de la Pucelle</strong></h6>
+                                <p class="card-text">Le 30 octobre, huit militant·es et un porte-parole de Greenpeace France ont été jugé·es en appel à Metz. En première instance, deux d’entre eux avaient été condamnés à de la prison ferme, les autres à cinq mois avec sursis. Leur crime ? Avoir dénoncé le risque nucléaire en allumant un feu d'artifice dans la centrale nucléaire de Cattenom, en Moselle. Ce mercredi 15 janvier à 14h, la Cour d’Appel de Metz a rendu son délibéré dans le procès de Greenpeace France.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cols-xl-4 card-container">
+                        <div class="card">
+                            <img class="card-img-top" src="css/media/Greenpeace_soja.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title"><strong>Paris</strong> - 02/04/2022</h4>
+                                <h6 class="card-subtitle">17h00 - <strong>Place de la Bastille</strong></h6>
+                                <p class="card-text">Le soja pour l’alimentation animale est l’un des principaux moteurs de la déforestation en Amérique du Sud. L’industrialisation de l’élevage et la surproduction de viande dans certaines régions du monde, y compris en Europe, ont fait bondir la demande globale en soja. Les pays exportateurs ont ainsi augmenté leur production, et ce trop souvent au détriment d’écosystèmes précieux.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+        
+
+        <footer class="container-fluid">
+            <section class="row copyright">
+                <p>Aitor Garcia © 2022</p>
+            </section>
+        </footer>
+
+    </body>
+</html>

@@ -230,11 +230,11 @@ sup {
 }
 
 a {
-  color: #0d6efd;
-  text-decoration: underline;
+  color: green;
+  text-decoration: none;
 }
 a:hover {
-  color: #0a58ca;
+  color: darkgreen;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -4492,8 +4492,9 @@ textarea.form-control-lg {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  height: 100%;
+  box-shadow: 0px 0px 14px 2px rgb(0 0 0 / 44%);
 }
 .card > hr {
   margin-right: 0;
@@ -4525,11 +4526,13 @@ textarea.form-control-lg {
 
 .card-title {
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .card-subtitle {
   margin-top: -0.25rem;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .card-text:last-child {
@@ -4758,7 +4761,9 @@ textarea.form-control-lg {
   display: flex;
   flex-wrap: wrap;
   padding: 0 0;
+  margin-top: 0.7rem;
   margin-bottom: 1rem;
+  font-size: 1.2rem;
   list-style: none;
 }
 
@@ -4768,11 +4773,11 @@ textarea.form-control-lg {
 .breadcrumb-item + .breadcrumb-item::before {
   float: left;
   padding-right: 0.5rem;
-  color: #6c757d;
+  color: var(--bs-body-color);
   content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
 }
 .breadcrumb-item.active {
-  color: #6c757d;
+  color: var(--bs-body-color);
 }
 
 .pagination {

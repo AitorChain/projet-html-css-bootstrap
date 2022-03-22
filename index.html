@@ -2,13 +2,14 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8"/>
-        <title>Mon site web</title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Greenpeace est un réseau international d'organisations indépendantes qui agissent selon les principes de non-violence pour protéger l’environnement, la biodiversité et promouvoir la paix."/>
+        <title>Greenpeace - Page d'accueil</title>
         <!--Bootstrap-->
         <link rel="stylesheet" href="css/styles.css" >
         <!--CSS-->
         <link rel="stylesheet" href="css/bootstrap/bootstrap.css" >
-        <!--JQuery-->
-        <script src="js/jquery-3.6.0.min.js"></script>
+        
         <!--Boostrap JS-->
         <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
         <style>
@@ -41,8 +42,8 @@
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-                        <li onclick="location.href='/evenements.html';" class="nav-item top-nav">
-                            <a href="/evenements.html">Prochains evenements</a>
+                        <li onclick="location.href='evenements.html';" class="nav-item top-nav">
+                            <a href="evenements.html">Prochains evenements</a>
                         </li>
                     </ul>
                 </div>
@@ -52,12 +53,12 @@
         <div class="container-fluid banner top-banner">
             
             <section class="container banner-text">
-                <h1><b>Greenpeace</b> est un réseau international d'organisations indépendantes qui agissent selon les principes de non-violence pour protéger l’<b>environnement</b>, la <b>biodiversité</b> et promouvoir la <b>paix</b>.</h1>
+                <h1><strong>Greenpeace</strong> est un réseau international d'organisations indépendantes qui agissent selon les principes de non-violence pour protéger l’<strong>environnement</strong>, la <strong>biodiversité</strong> et promouvoir la <strong>paix</strong>.</h1>
             </section>
             
             <button
             type="button"
-            class="btn-rounded btn-call-action"
+            class="btn-rounded btn-arrow"
             onclick="window.location.href='#about_us'" 
             ><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
@@ -67,7 +68,7 @@
 
         <main class="container-xl">
             <article id="about_us" class="about_us">
-                <h1 class="about_us_title">Qui sommes nous?</h1>
+                <h2 class="about_us_title">Qui sommes nous?</h2>
                 <div class="row row-cols-1">
                     <section class="col-lg-9 about_us_description">
                         <p>
@@ -126,19 +127,31 @@
                         </div>
                     </div>
                 </div>
+                
+                <section class="text-center">
+                <button
+                type="button"
+                class="btn-rounded btn-arrow btn-arrow-green"
+                onclick="window.location.href='#evenements-banner'" 
+                ><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                </svg></button>
+                </section>
+
+                
             </article>
         </main>
 
-        <div class="container-fluid evenements-banner banner">
+        <div id="evenements-banner" class="container-fluid evenements-banner banner">
             
             <section class="container banner-text">
-                <h1><b>Viens nous rejoindre</b> dans nos prochains evenemenets!</h1>
+                <h2><strong>Viens nous rejoindre</strong> dans nos prochains evenements!</h2>
             </section>
             
             <button
             type="button"
-            class="btn-call-action-green"
-            onclick="window.location.href='/evenemenets.html'" 
+            class="btn-call-action"
+            onclick="window.location.href='evenements.html'" 
             >Prochains evenements</button>
 
         </div>
